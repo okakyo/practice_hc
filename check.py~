@@ -1,0 +1,6 @@
+import requests
+from bs4 import BeautifulSoup
+
+s=requests.Session()
+data=s.get('https://twitter.com')
+print(data.headers.get('user-agent'))
