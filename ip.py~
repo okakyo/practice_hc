@@ -2,7 +2,7 @@ import socket,socks,requests
 
 class Tor:
     def __init__(self):
-        ip='localhost'
+        ip='www.denx.jp'
         port=9050
         socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5,ip,port)
         socket.socket=socks.socksocket
